@@ -1,0 +1,16 @@
+correct_dependency_ids: {}
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Main}
+package_name: Arcade_Program
+allow_embedding: false
+name: Clone of Clone of Arcade Program (2)
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {}
+startup_form: null
+db_schema: {}
+uplink_visible: true

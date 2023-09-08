@@ -1,0 +1,200 @@
+container:
+  type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: '#1310c6'}
+components:
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: true, text: 'Are you new or existing user?', font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: true, underline: false, icon: ''}
+  name: usernamelabel
+  layout_properties: {grid_position: 'EJLUHN,FEZEFU'}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: true, text: New, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: newunamebutton
+  layout_properties: {grid_position: 'WXJDIV,CNNAMZ', full_width_row: false, row_background: ''}
+  event_bindings: {click: newunamebutton_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: true, text: Existing, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: top, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: existingunamebutton
+  layout_properties: {grid_position: 'WXJDIV,PLNDDN', full_width_row: false, row_background: ''}
+  event_bindings: {click: existingunamebutton_click}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: Enter your username, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: true, underline: false, icon: ''}
+  name: n
+  layout_properties: {grid_position: 'DGNSHD,INQBAI'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: outset, enabled: true, foreground: '#0ce413', visible: false, text: '',
+    font_size: 20, font: comic sans ms, spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '#1310c6', bold: true, underline: false}
+  name: uname
+  layout_properties: {grid_position: 'IRIUNX,CUWNBN'}
+  event_bindings: {pressed_enter: uname_pressed_enter}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: 'Error!! Username not found. Please try again ', font_size: 20,
+    font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: true, underline: false, icon: ''}
+  name: usernamerror
+  layout_properties: {grid_position: 'UJRGLH,QHMFRP'}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: Error!! Username already exists. Choose another username,
+    font_size: 20, font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: true, underline: false, icon: ''}
+  name: uclasherror
+  layout_properties: {grid_position: 'CJSUEH,TQDYGK'}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: Enter your password, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: true, underline: false, icon: ''}
+  name: p
+  layout_properties: {grid_position: 'MNQLJX,XEAZHX'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: outset, enabled: true, foreground: '#0ce413', visible: false, text: '',
+    font_size: 20, font: comic sans ms, spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: '#1310c6', bold: true, underline: false}
+  name: pname
+  layout_properties: {grid_position: 'HKABEM,YFQJQF'}
+  event_bindings: {pressed_enter: pname_pressed_enter}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: Error!! Entered password is incorrect! Please try again,
+    font_size: 20, font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: true, underline: false, icon: ''}
+  name: pworderrorlabel
+  layout_properties: {grid_position: 'AVZBKK,OIYNIF'}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: 'Customer profile successfully created!! Enter your new
+      credentials again in the existing menu
+
+      Restarting........', font_size: 20, font: comic sans ms, spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: Restart
+  layout_properties: {grid_position: 'OAPZLK,KIACCR'}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: 'Welcome to the arcade player! What do you want to do?',
+    font_size: 20, font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: true, underline: false, icon: ''}
+  name: Successtext
+  layout_properties: {grid_position: 'HVKDKB,THMCTD'}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Profile, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: Cprofilebut
+  layout_properties: {grid_position: 'PNZGYQ,JHUGER'}
+  event_bindings: {click: Cprofilebut_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Prize Counter, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: prizes
+  layout_properties: {grid_position: 'PNZGYQ,SSEBYG'}
+  event_bindings: {click: prizesbut_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Premium, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: premiumbut
+  layout_properties: {grid_position: 'PRGBGV,PWZAZY'}
+  event_bindings: {click: premiumbut_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Games, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: Gamebut
+  layout_properties: {grid_position: 'PRGBGV,TFBNLE'}
+  event_bindings: {click: Gamebut_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Sign Out, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: sinoubut
+  layout_properties: {grid_position: 'RHIMXQ,ZFBZMH'}
+  event_bindings: {click: sinoubut_click}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: '', font_size: 20, font: comic sans ms, spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: Profileshow
+  layout_properties: {grid_position: 'QQNJZW,HWFIXF'}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: 'Welcome to the prize shop!! These are the current cost
+      of the prizes:
+
+      1. Pencil box = 20 Credits
+
+      2. Maze cube = 50 Credits
+
+      3. Art kit = 150 Credits
+
+      4. Football/Basketball = 900 Credits
+
+      5. Game set (hotwheels, beyblade) = 1500 Credits
+
+      6. Teddy bear = 2500 Credits
+
+      7, Cricket kit = 5000 Credits
+
+      8. PS5/Xbox/Switch = 10000 Credits', font_size: 20, font: comic sans ms, spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: prize
+  layout_properties: {grid_position: 'KZZZHT,RELZQX'}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+    visible: false, text: '', font_size: 20, font: comic sans ms, spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: premium
+  layout_properties: {grid_position: 'UUFXQO,HGUCHQ'}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Slots, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: Slots
+  layout_properties: {grid_position: 'AHLLEM,XUFGAG'}
+  event_bindings: {click: Slots_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Rock Paper Scissor, font_size: 20,
+    font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '#1310c6', bold: false, underline: false, icon: ''}
+  name: rps
+  layout_properties: {grid_position: 'AHLLEM,CBKLWH'}
+  event_bindings: {click: rps_click}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#0ce413', visible: false, text: Main Menu, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    bold: true, underline: false, icon: ''}
+  name: cmenubut
+  layout_properties: {grid_position: 'HLBSHB,PBDVMC'}
+  event_bindings: {click: cmenubut_click}
+is_package: true
