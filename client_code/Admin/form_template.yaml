@@ -1,11 +1,11 @@
 container:
   type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+  properties: {role: null, tooltip: '', border: '', foreground: '#ffffff', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-    spacing_below: small, background: '#1310c6'}
+    spacing_below: small, background: '#000000'}
 components:
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#ffffff',
     visible: true, text: Enter your username, font_size: 20, font: 'comic sans ms ',
     spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
     bold: true, underline: false, icon: ''}
@@ -13,43 +13,43 @@ components:
   layout_properties: {grid_position: 'JMTTAL,BGLEVE'}
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: outset, enabled: true, foreground: '#0ce413', visible: true, text: '',
+    border: outset, enabled: true, foreground: '#ffffff', visible: true, text: '',
     font_size: 20, font: comic sans ms, spacing_above: small, type: text, spacing_below: small,
-    italic: false, background: '#1310c6', bold: true, underline: false}
+    italic: false, background: '#000000', bold: true, underline: false}
   name: aname
   layout_properties: {grid_position: 'YDTBLH,DDZXDS'}
   event_bindings: {pressed_enter: aname_pressed_enter}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#ffffff',
     visible: false, text: 'Error!! Username not found. Please try again ', font_size: 20,
     font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
     italic: false, background: '', bold: true, underline: false, icon: ''}
   name: adnamerror
   layout_properties: {grid_position: 'MICVRW,XWSSDL'}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#ffffff',
     visible: false, text: Enter your password, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#0c0c0d',
     bold: true, underline: false, icon: ''}
   name: p
   layout_properties: {grid_position: 'CMEMJB,WXSPUQ'}
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: outset, enabled: true, foreground: '#0ce413', visible: false, text: '',
+    border: outset, enabled: true, foreground: '#ffffff', visible: false, text: '',
     font_size: 20, font: comic sans ms, spacing_above: small, type: text, spacing_below: small,
-    italic: false, background: '#1310c6', bold: true, underline: false}
+    italic: false, background: '#000000', bold: true, underline: false}
   name: apwrd
   layout_properties: {grid_position: 'DEDOXR,ZAGCJS'}
   event_bindings: {pressed_enter: apwrd_pressed_enter}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#ffffff',
     visible: false, text: Error!! Entered password is incorrect! Please try again,
     font_size: 20, font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
     italic: false, background: '', bold: true, underline: false, icon: ''}
   name: apwrderror
   layout_properties: {grid_position: 'OUEKDP,OGXZSN'}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#ffffff',
     visible: false, text: 'Welcome back admin! What would you like to do?', font_size: 20,
     font: comic sans ms, spacing_above: small, icon_align: left, spacing_below: small,
     italic: false, background: '', bold: true, underline: false, icon: ''}
@@ -57,42 +57,42 @@ components:
   layout_properties: {grid_position: 'DPXFBL,HRQFDH'}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#0ce413', visible: false, text: 'Profile
+    foreground: '#ffffff', visible: false, text: 'Profile
 
       ', font_size: 20, font: comic sans ms, spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '#1310c6', bold: true, underline: false,
+    spacing_below: small, italic: false, background: '#000000', bold: true, underline: false,
     icon: ''}
   name: Aprofilebut
   layout_properties: {grid_position: 'TIMBTT,QZPETZ'}
   event_bindings: {click: Aprofilebut_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#0ce413', visible: false, text: User Database, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    foreground: '#ffffff', visible: false, text: User Database, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
     bold: true, underline: false, icon: ''}
   name: Udatabut
   layout_properties: {grid_position: 'TIMBTT,BHIZUJ'}
   event_bindings: {click: udatabut_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#0ce413', visible: false, text: Finances, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    foreground: '#ffffff', visible: false, text: Finances, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
     bold: true, underline: false, icon: ''}
   name: finabut
   layout_properties: {grid_position: 'HBSKMR,PTBCYR'}
   event_bindings: {click: finabut_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#0ce413', visible: false, text: Games Overview, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    foreground: '#dedede', visible: false, text: Games Overview, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
     bold: true, underline: false, icon: ''}
   name: gameviewbut
   layout_properties: {grid_position: 'HBSKMR,ORTEWJ'}
   event_bindings: {click: gamesbut_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#0ce413', visible: false, text: Log Out, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    foreground: '#ff2424', visible: false, text: Log Out, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
     bold: true, underline: false, icon: ''}
   name: signobut
   layout_properties: {grid_position: 'SVTHSP,CENCLD'}
@@ -105,7 +105,7 @@ components:
   name: aprofile
   layout_properties: {grid_position: 'DNCPEI,OTFHBN'}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#0ce413',
+  properties: {role: null, align: center, tooltip: '', border: outset, foreground: '#ffffff',
     visible: false, text: Enter the name of the customer, font_size: 20, font: comic sans ms,
     spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
     bold: true, underline: false, icon: ''}
@@ -113,9 +113,9 @@ components:
   layout_properties: {grid_position: 'HTWDNW,GGHAUG'}
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: outset, enabled: true, foreground: '#0ce413', visible: false, text: '',
+    border: outset, enabled: true, foreground: '#ffffff', visible: false, text: '',
     font_size: 20, font: comic sans ms, spacing_above: small, type: text, spacing_below: small,
-    italic: false, background: '#1310c6', bold: true, underline: false}
+    italic: false, background: '#000000', bold: true, underline: false}
   name: csearch
   layout_properties: {grid_position: 'GFXIDU,GZWMSY'}
   event_bindings: {pressed_enter: csearch_pressed_enter}
@@ -134,16 +134,16 @@ components:
   name: finances
   layout_properties: {grid_position: 'EXGKZE,XPUGQL'}
 - type: Label
-  properties: {role: null, align: left, tooltip: '', border: outset, foreground: '#0ce413',
+  properties: {role: null, align: left, tooltip: '', border: outset, foreground: '#ffffff',
     visible: false, text: 'Chose a game below to find about it:', font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
     bold: true, underline: false, icon: ''}
   name: gamesdata
   layout_properties: {grid_position: 'TBWNRM,OWFQTA'}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#0ce413', visible: false, text: Slots, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    foreground: '#000000', visible: false, text: Slots, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#f1f41a',
     bold: true, underline: false, icon: ''}
   name: g1
   layout_properties: {grid_position: 'YPXWHZ,OQQLFT'}
@@ -151,7 +151,7 @@ components:
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: '#0ce413', visible: false, text: Game 2, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#f31212',
     bold: true, underline: false, icon: ''}
   name: g2
   layout_properties: {grid_position: 'YPXWHZ,QYHJBU'}
@@ -159,7 +159,7 @@ components:
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: '#0ce413', visible: false, text: Game 3, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#ff1414',
     bold: true, underline: false, icon: ''}
   name: g3
   layout_properties: {grid_position: 'YPXWHZ,WSKHLZ'}
@@ -173,8 +173,8 @@ components:
   layout_properties: {grid_position: 'WCEBFQ,HFQGDL'}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#0ce413', visible: false, text: Main Menu, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#1310c6',
+    foreground: '#0637f9', visible: false, text: Main Menu, font_size: 20, font: comic sans ms,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
     bold: true, underline: false, icon: ''}
   name: amenubut
   layout_properties: {grid_position: 'ZIRJGJ,EGHHGP'}
