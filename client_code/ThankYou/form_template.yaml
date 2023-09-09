@@ -2,7 +2,7 @@ container:
   type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-    spacing_below: small, background: '#9e9a9a'}
+    spacing_below: small, background: '#ffffff'}
 components:
 - type: Image
   properties: {role: null, vertical_align: center, height: 303, tooltip: '', border: '',
