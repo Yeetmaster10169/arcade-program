@@ -7,7 +7,7 @@ services:
 startup: {type: form, module: Main}
 package_name: Arcade_Program
 allow_embedding: false
-name: Test dummy
+name: Arcade management
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {logo_img: 'asset:fotor-ai-2023082421333.jpg'}
