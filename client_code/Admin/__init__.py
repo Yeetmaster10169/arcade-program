@@ -42,7 +42,7 @@ class Admin(AdminTemplate):
     self.aprofile.visible=False
     self.csearch.visible=False
     self.finances.visible=False
-    self.gamesdata.visible=False
+    #self.gamesdata.visible=False
     self.g1.visible=False
     self.g2.visible=False
     self.g3.visible=False
@@ -130,7 +130,7 @@ class Admin(AdminTemplate):
 
   def gamesbut_click(self, **event_args):
     self.amenubut.visible=True
-    self.gamesdata.visible=True
+   # self.gamesdata.visible=True
     self.g1.visible=True
     self.g2.visible=True
     self.g3.visible=True 
