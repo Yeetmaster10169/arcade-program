@@ -75,14 +75,6 @@ components:
   event_bindings: {click: udatabut_click}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-    foreground: '#ffffff', visible: false, text: Finances, font_size: 20, font: comic sans ms,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
-    bold: true, underline: false, icon: ''}
-  name: finabut
-  layout_properties: {grid_position: 'HBSKMR,PTBCYR'}
-  event_bindings: {click: finabut_click}
-- type: Button
-  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: '#ff2424', visible: false, text: Log Out, font_size: 20, font: comic sans ms,
     spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#000000',
     bold: true, underline: false, icon: ''}
