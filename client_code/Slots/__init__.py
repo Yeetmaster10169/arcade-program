@@ -87,11 +87,11 @@ class Slots(SlotsTemplate):
       prize=50
       self.winnings.visible=True
       self.winnings.text="Congrats!! \nYou got 50 credits!!"
-    elif a=='41' and b=='r42' and c=='r43':
+    elif a=='r41' and b=='r42' and c=='r43':
       prize=777
       self.winnings.visible=True
       self.winnings.text="Congrats!! \nYou got 777 credits!!"
-    elif a=='51' and b=='r52' and c=='r53':
+    elif a=='r51' and b=='r52' and c=='r53':
       prize=100
       self.winnings.visible=True
       self.winnings.text="Congrats!! \nYou got 100 credits!!"
