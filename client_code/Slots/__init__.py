@@ -188,4 +188,4 @@ class Slots(SlotsTemplate):
     self.start_click()
 
   def exit_click(self, **event_args):
-    open_form('Customer')
+    open_form('ThankYou')
