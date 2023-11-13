@@ -43,15 +43,15 @@ class Admin(AdminTemplate):
     self.csearch.visible=False
     self.finances.visible=False
     #self.gamesdata.visible=False
-    self.g1.visible=False
-    self.g2.visible=False
-    self.g3.visible=False
+    #self.g1.visible=False
+    #self.g2.visible=False
+   # self.g3.visible=False
     self.gamedata.visible=False
     self.Adminwelcome.visible=True
     self.Aprofilebut.visible=True
     self.Udatabut.visible=True
-    self.finabut.visible=True
-    self.gameviewbut.visible=True
+    #self.finabut.visible=True
+    #self.gameviewbut.visible=True
     self.signobut.visible=True
     self.udata.visible=False
     self.n.visible=False
@@ -87,8 +87,8 @@ class Admin(AdminTemplate):
     self.Adminwelcome.visible=False
     self.Aprofilebut.visible=False
     self.Udatabut.visible=False
-    self.finabut.visible=False
-    self.gameviewbut.visible=False
+    #self.finabut.visible=False
+    #self.gameviewbut.visible=False
 
   def udatabut_click(self, **event_args):
     self.c.visible=True
@@ -98,8 +98,8 @@ class Admin(AdminTemplate):
     self.Adminwelcome.visible=False
     self.Aprofilebut.visible=False
     self.Udatabut.visible=False
-    self.finabut.visible=False
-    self.gameviewbut.visible=False
+    #self.finabut.visible=False
+    #self.gameviewbut.visible=False
 
   def csearch_pressed_enter(self, **event_args):
     searchname=self.csearch.text
@@ -125,21 +125,21 @@ class Admin(AdminTemplate):
     self.Adminwelcome.visible=False
     self.Aprofilebut.visible=False
     self.Udatabut.visible=False
-    self.finabut.visible=False
-    self.gameviewbut.visible=False
+    #self.finabut.visible=False
+    #self.gameviewbut.visible=False
 
   def gamesbut_click(self, **event_args):
     self.amenubut.visible=True
    # self.gamesdata.visible=True
-    self.g1.visible=True
-    self.g2.visible=True
-    self.g3.visible=True 
+   # self.g1.visible=True
+    #self.g2.visible=True
+    #self.g3.visible=True 
     self.Adminwelcome.visible=False
     self.signobut.visible=False
     self.Aprofilebut.visible=False
     self.Udatabut.visible=False
-    self.finabut.visible=False
-    self.gameviewbut.visible=False
+    #self.finabut.visible=False
+    #self.gameviewbut.visible=False
 
   def g1_click(self, **event_args):
     global choice
